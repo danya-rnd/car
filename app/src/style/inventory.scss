@@ -1,0 +1,41 @@
+.inventory {
+	background: #ECECEC;
+	padding: 7px 0 16px;
+	box-sizing: border-box;
+	&__wrap {
+		max-width: 700px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 175.78%;
+		color: #020101;
+		text-align: center;
+	}
+	&__tabulation {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 18px;
+	}
+	&__tab {
+		display: block;
+		width: 139px;
+		line-height: 41px;
+		font-weight: bold;
+		font-size: 16px;
+		color: #fff;
+		background: #49555F;
+		border-radius: 3px;
+		text-align: center;
+		cursor: pointer;
+		user-select: none;
+		&.active {
+			background: #C70917;
+		}
+	}
+}

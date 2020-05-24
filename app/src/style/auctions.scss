@@ -1,0 +1,117 @@
+.auctions {
+	padding: 15px 0 20px;
+	box-sizing: border-box;
+	&__wrap {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 175.78%;
+		color: #020101;
+		text-align: center;
+	}
+	&__slider-wrap {
+		position: relative;
+		margin-top: 27px;
+	}
+	&__slider {
+	}
+	&__slide {
+		background: #FFFFFF;
+		box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	&__photo {
+		position: relative;
+		width: 100%;
+		height: 165px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__price {
+		display: block;
+		position: absolute;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 140.62%;
+		line-height: 26px;
+		color: #fff;
+		background: rgba(22, 95, 181, 0.52);
+		bottom: 0;
+		right: 0;
+		padding: 0 16px;
+		box-sizing: border-box;
+	}
+	&__desc {
+		margin-top: 4px;
+	}
+	&__name {
+		display: block;
+		font-size: 22px;
+		line-height: 140.62%;
+		color: #165FB5;
+		text-decoration: none;
+		margin-bottom: 5px;
+	}
+	&__param {
+		display: block;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #666666;
+		span {
+			font-weight: bold;
+		}
+	}
+	&__bottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 11px;
+	}
+	&__lot {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 140.62%;
+		color: #000;
+	}
+	&__clock {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		img {
+			margin-right: 3px;
+		}
+	}
+	&__time {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 140.62%;
+		color: #666666;
+	}
+	&__next, &__prev {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		outline: none;
+	}
+	&__next {
+		right: -50px;
+	}
+	&__prev {
+		left: -50px;
+	}
+}

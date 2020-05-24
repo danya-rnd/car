@@ -1,0 +1,138 @@
+.header {
+	&__top {
+		background: #49555F;
+		padding: 5px 0;
+		box-sizing: border-box;
+		&__wrap {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			max-width: 1196px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		&__link {
+			display: block;
+			margin-right: 23px;
+			font-size: 12px;
+			line-height: 175.78%;
+			font-style: normal;
+			font-weight: 400;
+			color: #fff;
+			text-decoration: none;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__middle {
+		background: #434343;
+		padding: 10px 0;
+		box-sizing: border-box;
+		&__wrap {
+			max-width: 1196px;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 21px;
+			color: #fff;
+			max-width: 329px;
+		}
+		&__logo {
+			cursor: pointer;
+		}
+		&__contact {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 495px;
+			width: 100%;
+		}
+		&__group {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		&__link {
+			color: #fff;
+			line-height: 20px;
+			text-decoration: none;
+			&_mail {
+				font-weight: normal;
+			}
+			&_phone {
+				font-weight: bold;
+			}
+		}
+		&__link_phone {}
+		&__button {
+			line-height: 25.6px;
+			padding: 0 19px;
+			box-sizing: border-box;
+			border-radius: 2px;
+			background: #FDBE2C;
+			border: 0px;
+			font-size: 10px;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+	&__icon {
+		margin-right: 7px;
+	}
+	&__bottom {
+		background: #EFEDED;
+		padding: 13px 0;
+		box-sizing: border-box;
+		&__wrap {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: 1196px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0 50px;
+			box-sizing: border-box;
+		}
+		&__button {
+			line-height: 30px;
+			padding: 0 26px;
+			box-sizing: border-box;
+			border-radius: 2px;
+			background: #FDBE2C;
+			border: 0px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+	&__nav {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		&__link {
+			font-style: normal;
+			font-weight: bold;
+			line-height: 19px;
+			font-size: 16px;
+			text-decoration: underline;
+			color: #666666;
+		}
+		&__elem {
+			margin-right: 114px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

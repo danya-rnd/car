@@ -1,0 +1,98 @@
+.catalog {
+	padding: 24px 0;
+	box-sizing: border-box;
+	&__wrap {
+		max-width: 1300px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 175.78%;
+		color: #020101;
+	}
+	&__content {
+		margin-top: 17px;
+	}
+	&__cars {
+		margin-top: 17px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__table {
+		width: 100%;
+		margin-left: 20px;
+		border-collapse: collapse;
+	}
+	&__header {
+		background: #49555F;
+	}
+	&__name {
+		border: none;
+		padding: 7px 0 12px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 140.62%;
+		color: #fff;
+	}
+	&__slot {
+		text-align: center;
+		&:last-child {
+			text-align: left;
+		}
+	}
+	&__photo {
+		position: relative;
+		width: 105px;
+		height: 91px;
+		overflow: hidden;
+		padding: 10px 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__link {
+		color: #165FB5;
+		text-decoration: none;
+	}
+	&__slot {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 140.62%;
+		color: #666666;
+		&_price {
+			font-weight: bold;
+		}
+		&_photo {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__lot {
+		border-top: 1px solid #C4C4C4;
+	}
+	&__current {
+		display: block;
+		color: #000000;
+		background: #DFDFDF;
+	}
+	&__price {
+		display: block;
+	}
+	&__button {
+		display: block;
+		background: #D3591A;
+		border-radius: 3px;
+		width: 72px;
+		line-height: 20px;
+		color: #fff;
+		border: none;
+		margin-top: 15px;
+	}
+}

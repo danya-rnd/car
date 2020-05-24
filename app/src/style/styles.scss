@@ -1,0 +1,37 @@
+@import './fonts';
+@import '../../../node_modules/jquery/css/swiper.css';
+
+@import './header';
+@import './footer';
+@import './banner';
+@import './search-block';
+@import './advantages';
+@import './register';
+@import './numbers';
+@import './reviews';
+@import './auctions';
+@import './description';
+@import './help';
+@import './calculator';
+@import './inventory';
+@import './breadcrumbs';
+@import './catalog';
+@import './models';
+@import './filters';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button, a {
+	cursor: pointer;
+}
+
+input, button, select{
+	outline: none;
+}

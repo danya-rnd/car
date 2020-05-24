@@ -1,0 +1,32 @@
+.numbers {
+	background: linear-gradient(180deg, #49555F 0%, #7D868D 100%);
+	padding: 14px 0 15px;
+	&__wrap {
+		max-width: 1020px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__block {}
+	&__desc {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #fff;
+	}
+	&__num {
+		display: block;
+		text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 59px;
+		color: #fff;
+	}
+}

@@ -1,0 +1,8 @@
+.calculator {
+	position: fixed;
+	right: -5px;
+	top: 50%;
+	transform: translateY(-50%) translateX(100%);
+	z-index: 10000;
+	cursor: pointer;
+}

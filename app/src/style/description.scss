@@ -1,0 +1,28 @@
+.description {
+	padding: 20px 0 50px;
+	box-sizing: border-box;
+	&__wrap {
+		max-width: 1190px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 140.62%;
+		color: #000000;
+		margin-bottom: 50px;
+	}
+	&__text {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 140.62%;
+		color: #000000;
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

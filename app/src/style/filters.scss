@@ -1,0 +1,111 @@
+.filters {
+	background: rgba(255, 255, 255, 0.84);
+	box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+	max-width: 235px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 100%;
+	&__wrap {
+
+	}
+	&__block {
+		background: rgba(255, 255, 255, 0.84);
+		box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+		padding: 5px 9px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 140.62%;
+		color: #444444;
+		cursor: pointer;
+	}
+	&__box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__hidden {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		display: none;
+		padding: 0 7px 0 5px;
+		box-sizing: border-box;
+		height: 115px;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			width: 3px;
+			padding-right: 3px;
+		}
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #888;
+		}
+		&.active {
+			display: block;
+		}
+	}
+	&__checkbox {
+		&__custom {
+			position: relative;
+			display: block;
+			width: 11px;
+			height: 11px;
+			border: 0.5px solid #25282B;
+			border-radius: 2px;
+			cursor: pointer;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 3px;
+				top: 2px;
+				width: 7px;
+				height: 7px;
+				background: url('../img/icons/checkmark.svg') no-repeat;
+				background-size: cover;
+				display: none;
+			}
+		}
+		&__input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+			&:checked ~ .filters__checkbox__custom:after {
+				display: block;
+			}
+		}
+	}
+	&__name {
+		display: block;
+		width: 100%;
+		margin-left: 10px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+	}
+	&__count {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: #444444;
+	}
+}
