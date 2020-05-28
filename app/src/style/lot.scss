@@ -1,0 +1,133 @@
+.lot {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 21px 0;
+	box-sizing: border-box;
+	@media screen and (max-width: 1060px) {
+		flex-wrap: wrap;
+	}
+	&__details, &__history, &__info {
+		width: 30%;
+		@media screen and (max-width: 1060px) {
+			width: 45%;
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 706px) {
+			width: 100%;
+		}
+	}
+	&__table {
+		border-collapse: collapse;
+		width: 100%;
+		&_history {
+			.lot__tr {
+				&:nth-child(1), &:nth-child(5), &:nth-child(6) {
+					background: #434343;
+					color: #fff;
+				}
+			}
+		}
+	}
+	&__tr {
+		&:nth-child(2n + 1) {
+			background: #ECECEC;
+		}
+	}
+	&__th {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 175.78%;
+	}
+	&__td {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		padding: 3px 4px;
+		box-sizing: border-box;
+		width: 50%;
+		&_history {
+			padding-bottom: 13px;
+		}
+		&_shipping {
+			text-align: center;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 175.78%;
+			margin-top: 5px;
+		}
+	}
+	&__current {
+		display: block;
+		text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 175.78%;
+	}
+	&__bid {
+		background: #C70917;
+		border-radius: 3px;
+		line-height: 35px;
+		width: 135px;
+		border: 0;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 175.78%;
+		color: #fff;
+		margin-left: calc((100% - 135px) / 2);
+		margin-top: 9px;
+	}
+	&__shipping {
+		margin-top: 15px;
+		&__title {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 175.78%;
+			display: block;
+			text-align: center;
+			background: #434343;
+			color: #fff;
+		}
+	}
+	&__estimate {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 8px;
+	}
+	&__label {
+		display: block;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		width: 77px;
+	}
+	&__input {
+		width: 140px;
+		background: #FCFCFC;
+		border: 1px solid #A3A3A3;
+		box-sizing: border-box;
+		border-radius: 2px;
+		line-height: 35px;
+		padding-left: 15px;
+		box-sizing: border-box;
+	}
+	&__button {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 175.78%;
+		background: #C70917;
+		border-radius: 3px;
+		border: none;
+		color: #fff;
+		line-height: 35px;
+		width: 86px;
+	}
+}

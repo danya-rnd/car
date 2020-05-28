@@ -4,7 +4,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 25px 0 21px;
-	box-sizing: border-box; 
+	box-sizing: border-box;
+	@media screen and (max-width: 948px) {
+		display: none;
+	}
 	&__wrap {
 		max-width: 815px;
 		width: 100%;
@@ -12,6 +15,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		img {
+			@media screen and (max-height: 1380px) {
+				height: 72px;
+				width: auto;
+			}
+		}
 	}
 	&__title {
 		color: #fff;
@@ -20,6 +29,9 @@
 		font-size: 60px;
 		line-height: 175.78%;
 		text-align: center;
+		@media screen and (max-height: 1380px) {
+			font-size: 48px;
+		}
 	}
 	&__text {
 		color: #fff;
@@ -28,5 +40,9 @@
 		font-size: 30px;
 		line-height: 35px;
 		text-align: center;
+		@media screen and (max-height: 1380px) {
+			font-size: 24px;
+			line-height: 28px;
+		}
 	}
 }

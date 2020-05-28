@@ -1,10 +1,25 @@
 .reviews {
 	padding: 31px 0 15px;
 	box-sizing: border-box;
+	&_others {
+		padding-bottom: 60px;
+	}
 	&__wrap {
 		max-width: 1150px;
 		width: 100%;
 		margin: 0 auto;
+		@media screen and (max-width: 1290px) {
+			max-width: 1000px;
+		}
+		@media screen and (max-width: 1142px) {
+			max-width: 750px;
+		}
+		@media screen and (max-width: 892px) {
+			max-width: 450px;
+		}
+		@media screen and (max-width: 618px) {
+			max-width: 150px;
+		}
 	}
 	&__slider-wrap {
 		width: 100%;

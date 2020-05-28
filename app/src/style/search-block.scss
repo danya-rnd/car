@@ -1,4 +1,5 @@
 .search-block {
+	position: relative;
 	background: linear-gradient(180deg, #49555F 0%, #7D868D 100%);
 	padding: 13px 0;
 	box-sizing: border-box;
@@ -6,12 +7,27 @@
 		max-width: 950px;
 		width: 100%;
 		margin: 0 auto;
+		@media screen and (max-width: 990px) {
+			padding: 0 20px;
+			box-sizing: border-box; 
+		}
 	}
 	&__vin {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		@media screen and (max-width: 990px) {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -40px;
+		}
+		@media screen and (max-width: 948px) {
+			width: 100%;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
 		&__input {
 			width: 100%;
 			line-height: 23px;
@@ -29,6 +45,9 @@
 			background-size: 100%;
 			cursor: pointer;
 			margin-left: 12px;
+			@media screen and (max-width: 948px) {
+				filter: invert(1) brightness(0);
+			}
 		}
 	}
 	&__options {
@@ -37,6 +56,9 @@
 		flex-direction: row;
 		justify-content: space-between;
 		margin-top: 16px;
+		@media screen and (max-width: 920px) {
+			flex-direction: column;
+		}
 	}
 	&__selectbg {
 		position: relative;
@@ -47,6 +69,16 @@
 		display: flex;
 		flex-direction: row;
 		background: #fff;
+		@media screen and (max-width: 990px) {
+			margin-bottom: 14px;
+			margin-right: 10px;
+			width: 20%;
+		}
+		@media screen and (max-width: 920px) {
+			max-width: 100%;
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 	&__name {
 		position: absolute;
@@ -61,6 +93,14 @@
 		}
 		&_to {
 			right: 62px;
+			@media screen and (max-width: 990px) {
+				right: 30%;
+			}
+			@media screen and (max-width: 920px) {
+				right: auto;
+				left: 50%;
+				transform: translateX(25%);
+			}
 		}
 	}
 	&__select {
@@ -82,6 +122,7 @@
 		}
 	}
 	&__submit {
+		display: block;
 		width: 134px;
 		line-height: 41px;
 		background: #FDBE2C;
@@ -92,6 +133,9 @@
 		font-weight: bold;
 		color: #fff;
 		text-transform: uppercase;
+		@media screen and (max-width: 920px) {
+			width: 100%;
+		}
 	}
 	&__fast {
 		width: 100%;
@@ -100,6 +144,10 @@
 		margin-top: 8px;
 		justify-content: flex-end;
 		align-items: center;
+		@media screen and (max-width: 920px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
 	}
 	&__search {
 		width: 134px;
@@ -112,6 +160,9 @@
 		font-weight: bold;
 		color: #fff;
 		text-transform: uppercase;
+		@media screen and (max-width: 920px) {
+			width: 100%;
+		}
 	}
 	&__vehicles {
 		font-style: normal;
@@ -122,6 +173,10 @@
 		justify-self: center;
 		margin-right: calc(100% / 2 - 134px * 2);
 		text-transform: uppercase;
+		@media screen and (max-width: 920px) {
+			margin-right: 0;
+			margin-top: 10px;
+		}
 		span {
 			font-weight: bold;
 		}

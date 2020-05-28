@@ -12,11 +12,25 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		@media screen and (max-width: 1136px) {
+			flex-wrap: wrap;
+		}
 	}
 	&__list {
 		width: 20%;
 		padding: 0 20px;
 		box-sizing: border-box;
+		@media screen and (max-width: 1136px) {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 10px;
+		}
+		&_four {
+			width: 25%;
+			@media screen and (max-width: 1036px) {
+				width: 100%;
+			}
+		}
 		&:first-child {
 			padding-left: 0;
 		}

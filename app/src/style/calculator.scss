@@ -1,8 +1,28 @@
 .calculator {
 	position: fixed;
 	right: -5px;
-	top: 50%;
-	transform: translateY(-50%) translateX(100%);
+	bottom: 20%;
+	transform: translateX(100%);
 	z-index: 10000;
 	cursor: pointer;
+	@media screen and (max-width: 1380px) {
+		bottom: 0;
+		width: 100%;
+		right: 0;
+	}
+	img {
+		@media screen and (max-width: 1380px) {
+			display: none;
+		}
+	}
+	&__button {
+		display: none;
+		line-height: 40px;
+		background: #fdbe2c;
+		color: #fff;
+		text-align: center;
+		@media screen and (max-width: 1380px) {
+			display: block;
+		}
+	}
 }

@@ -1,8 +1,46 @@
 .header {
+	width: 100%;
+	z-index: 1500;
+	&.fixed {
+		position: fixed;
+	}
+	&__burger {
+		display: none;
+		@media screen and (max-width: 948px) {
+			display: block;
+			width: 24.5px;
+		}
+	}
+	&__under {
+		height: 162px;
+		@media screen and (max-width: 1380px) {
+			height: 133.33px;
+		}
+	}
+	&__close {
+		display: none;
+		@media screen and (max-width: 948px) {
+			display: block;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+		}
+	}
 	&__top {
 		background: #49555F;
 		padding: 5px 0;
 		box-sizing: border-box;
+		@media screen and (max-width: 948px) {
+			position: fixed;
+			background: #fff;
+			transform: translateX(-100%);
+			top: 0;
+			left: 0;
+			width: 204px;
+			height: 100%;
+			z-index: 2000;
+			transition: .2s;
+		}
 		&__wrap {
 			display: flex;
 			flex-direction: row;
@@ -10,6 +48,23 @@
 			max-width: 1196px;
 			width: 100%;
 			margin: 0 auto;
+			@media screen and (max-width: 1246px) {
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+			@media screen and (max-width: 948px) {
+				flex-direction: column;
+				margin-top: 50px;
+			}
+		}
+		&__buttons {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			@media screen and (max-width: 948px) {
+				display: flex;
+			}
 		}
 		&__link {
 			display: block;
@@ -20,15 +75,47 @@
 			font-weight: 400;
 			color: #fff;
 			text-decoration: none;
+			@media screen and (max-width: 948px) {
+				color: #434343;
+				text-align: center;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+		&__button {
+			line-height: 25.6px;
+			padding: 0 19px;
+			box-sizing: border-box;
+			border-radius: 2px;
+			background: #FDBE2C;
+			border: 0px;
+			font-size: 10px;
+			font-weight: bold;
+			color: #fff;
+		}
+		&__register {
+			line-height: 30px;
+			padding: 0 26px;
+			box-sizing: border-box;
+			border-radius: 2px;
+			background: #FDBE2C;
+			border: 0px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			margin-top: 15px;
 		}
 	}
 	&__middle {
 		background: #434343;
 		padding: 10px 0;
 		box-sizing: border-box;
+		@media screen and (max-width: 948px) {
+			background: #fff;
+		}
 		&__wrap {
 			max-width: 1196px;
 			width: 100%;
@@ -37,6 +124,10 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			@media screen and (max-width: 1246px) {
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
 		}
 		&__text {
 			font-style: normal;
@@ -45,10 +136,66 @@
 			line-height: 21px;
 			color: #fff;
 			max-width: 329px;
+			@media screen and (max-width: 1380px) {
+				font-size: 14px;
+				line-height: 16px;
+				max-width: 279px;
+			}
+			@media screen and (max-width: 948px) {
+				color: #000;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 76px;
+				text-align: center;
+				width: 279px;
+			}
 		}
 		&__logo {
-			cursor: pointer;
+			position: relative;
+			@media screen and (max-width: 948px) {
+			
+			}
+			img:nth-child(1) {
+				cursor: pointer;
+				@media screen and (max-width: 1380px) {
+					width: 100px;
+					height: auto;
+				}
+				@media screen and (max-width: 948px) {
+					display: none;
+				}
+			}
+			img:nth-child(2) {
+				display: none;
+				@media screen and (max-width: 948px) {
+					display: block;
+					width: 115px;
+					height: auto;
+				}
+			}
 		}
+		&__desc {
+			display: none;
+			width: 532px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #FFFFFF;
+			border-radius: 3px;
+			padding: 15px;
+			box-sizing: border-box;
+			top: 38px;
+			@media screen and (max-width: 948px) {
+				display: none !important;
+			}
+			&__text {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 17px;
+			}
+		}	
 		&__contact {
 			display: flex;
 			flex-direction: row;
@@ -56,16 +203,34 @@
 			justify-content: space-between;
 			max-width: 495px;
 			width: 100%;
+			@media screen and (max-width: 948px) {
+				max-width: 70px;
+			}
 		}
 		&__group {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
+			text-decoration: none;
+			@media screen and (max-width: 948px) {
+				width: 30px;
+				height: 30px;
+				background: #ccc;
+				border-radius: 3px;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		&__link {
 			color: #fff;
 			line-height: 20px;
 			text-decoration: none;
+			@media screen and (max-width: 1380px) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: 948px) {
+				display: none;
+			}
 			&_mail {
 				font-weight: normal;
 			}
@@ -84,15 +249,29 @@
 			font-size: 10px;
 			font-weight: bold;
 			color: #fff;
+			@media screen and (max-width: 948px) {
+				display: none;
+			}
 		}
 	}
 	&__icon {
 		margin-right: 7px;
+		@media screen and (max-width: 948px) {
+			filter: invert(1) brightness(0);
+			margin-right: 0;
+			vertical-align: top;
+		}
 	}
 	&__bottom {
 		background: #EFEDED;
 		padding: 13px 0;
 		box-sizing: border-box;
+		@media screen and (max-width: 1380px) {
+			padding: 8px 0;
+		}
+		@media screen and (max-width: 948px) {
+			background: #fff;
+		}
 		&__wrap {
 			display: flex;
 			flex-direction: row;
@@ -102,6 +281,15 @@
 			margin: 0 auto;
 			padding: 0 50px;
 			box-sizing: border-box;
+			@media screen and (max-width: 1246px) {
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+			@media screen and (max-width: 948px) {
+				justify-content: center;
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
 		}
 		&__button {
 			line-height: 30px;
@@ -113,6 +301,13 @@
 			font-size: 16px;
 			font-weight: bold;
 			color: #fff;
+			@media screen and (max-width: 1380px) {
+				font-size: 14px;
+				line-height: 25px;
+			}
+			@media screen and (max-width: 948px) {
+				display: none;
+			}
 		}
 	}
 	&__nav {
@@ -120,6 +315,9 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		@media screen and (max-width: 948px) {
+			flex-direction: column;
+		}
 		&__link {
 			font-style: normal;
 			font-weight: bold;
@@ -127,9 +325,20 @@
 			font-size: 16px;
 			text-decoration: underline;
 			color: #666666;
+			@media screen and (max-width: 1380px) {
+				font-size: 14px;
+				line-height: 14px;
+			}
+			
 		}
 		&__elem {
 			margin-right: 114px;
+			@media screen and (max-width: 1246px) {
+				margin-right: 70px;
+			}
+			@media screen and (max-width: 948px) {
+				margin-right: 0;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
